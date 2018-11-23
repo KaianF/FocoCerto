@@ -1,0 +1,170 @@
+#app{
+	display: flex;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.searchBar {
+	width: auto;
+	height: 250px;
+	text-align: center;
+}
+.hambm{
+	cursor: pointer;
+	position: fixed;
+	top: 0.2px;
+}
+
+.pesquisa{
+	width:750px;
+	border-width: 1px;
+	height: 40px;
+	font-size: 28px;
+	border-radius: 3px;
+	border-style: solid;
+	font-style: bold;
+	box-shadow: 0px 8px 22px -8px rgba(0,0,0,0.75);
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+.titulo{
+	display: block;
+	text-align: center;
+	font-family: 'Raleway';
+	font-size: 100px;
+	height: 60px;
+}
+
+::-webkit-input-placeholder {
+	font-size: 28px;
+	font-family: 'Raleway';
+   	font-style: italic;
+}
+.pusher{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;	
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+}
+.funnel{
+	cursor: pointer;
+	align-self: center;
+}
+
+.pusher .button{
+	margin : 15px auto 0 auto;
+	width: 150px;
+	display: block;
+}
+.socials{
+	display: flex;
+	position: absolute;
+	bottom: 10px;
+	justify-content:center;
+}
+.socials p{
+	align-self: flex-start;
+}
+.help{
+	font-size:35px;
+	cursor: pointer;
+	position: fixed;
+	right:1px;
+}
+.post{
+	display: flex;
+	align-items: center;
+}
+.areas{
+	overflow-y: scroll;
+	width: 89rem;
+	height: 850px;
+}
+.hmenu{
+	width: 100px;
+	position: fixed;
+	background-color: black;
+}
+.titulso{
+	margin-left: 3em;
+	font-size: 3.5em;
+	font-family: 'Raleway';
+	color: white;
+	white-space: nowrap;
+}
+.menupesq{
+	position: fixed;
+	background-color: black;
+	width: 100%;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	transition: 1s;
+}
+.areapesq{
+	align-items: center;
+	display: flex;
+	margin-left: 30px;
+}
+.areapesq input{
+	height: 50px;
+	width: 50rem;
+	font-size: 20px;
+	border-style: none;
+	border-radius: 3px;
+	transition: 1s;
+	padding-left: 1rem;
+}
+.areapesq input:hover{
+	outline: none;
+}
+.areapesq .funnel{
+	font-size: 30px;
+	margin-left: 15px;
+	cursor: pointer;
+}
+.btnpesq{
+	align-self: center;
+	padding-left: 15px;
+	font-size: 30px;
+	cursor: pointer;
+	outline: none;
+}
+.btnpesq:hover{
+	outline: none;
+}
+.pesquisaaa{
+	display: flex;
+	align-content: center;
+	background-color: white;
+	border-radius: 3px;
+}
+#menuv{
+	width: 100%;
+}
+#hmenu .funnel{
+	filter: invert(100%);
+}
+#posts{
+	width: 100%;
+	height: 700px;
+}
+.lista{
+	overflow-y: scroll;
+	width: 70%;
+	height: 700px;
+	margin-top: 10rem;
+	align-self: center;
+}
+#menu{
+	width: 100%;
+	display: flex;
+	margin-top: 1rem;
+	justify-content: center;
+}

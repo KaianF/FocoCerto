@@ -1,0 +1,27 @@
+					JFileChooser fc = new JFileChooser();
+
+					int dialogResult = fc.showOpenDialog(Interface.this);
+
+					if (dialogResult == fc.APPROVE_OPTION) {
+						
+						File f = fc.getSelectedFile();
+						
+						lab = LabyrinthCreator.createLabyrinth(f);
+
+						lblStatus.setText("Labyrinth ready to be solved!");
+                                                lab.resolve();
+						System.out.println(lab.toString());
+					}
+				} catch (Exception error) {
+					                               System.out.println(error.getMessage());
+				}
+			}
+		});
+		btnSearch.setBounds(103, 28, 165, 25);
+		contentPane.add(btnSearch);
+
+		lblStatus = new JLabel("No Labyrinth Selected");
+		lblStatus.setBounds(96, 150, 220, 15);
+		contentPane.add(lblStatus);
+	}
+}
