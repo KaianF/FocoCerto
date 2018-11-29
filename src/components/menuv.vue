@@ -1,4 +1,3 @@
-/* eslint-disable */
 <template>
   <div id="menuv">
     <dashboard class ="hambm" w="50px" h="50px" @click.native="abremenu"></dashboard>

@@ -1,4 +1,3 @@
-/* eslint-disable */
 <template>
   <div id="hmenu">
     <div class="menupesq" id="menupesqs">
@@ -7,14 +6,14 @@
       </span>
       <div class="areapesq">
         <div class="pesquisaaa">
-          <input type="text" name="pesquisa" id="inputao">
+          <input type="text" v-model="texto" name="pesquisa" id="inputao">
           <search w="30px" h="30px" class="btnpesq" @click.native="pesquisa"></search>
         </div>
         <filtro></filtro>
         <div id="socials">
-          <facebook w="50px" h="50px" class="centrovertical"></facebook>
-          <github w="50px" h="50px" class="centrovertical"></github>
-          <about w="50px" h="50px" class="centrovertical"></about>
+          <facebook style="cursor: pointer;margin: 3px;" w="50px" h="50px" class="centrovertical"></facebook>
+          <github style="cursor: pointer;margin: 3px;" w="50px" h="50px" class="centrovertical"></github>
+          <about style="cursor: pointer;margin: 3px;" w="50px" h="50px" class="centrovertical"></about>
         </div>
       </div>
     </div>
@@ -28,10 +27,6 @@
   import search from 'vue-ionicons/dist/md-search.vue'
   import posts from './posts.vue'
   export default{
-    mouted(){
-      this.filtro()
-      console.log("fas")
-    },
     data(){
       return{
         texto:null
@@ -46,11 +41,6 @@
       facebook
     },
     methods:{
-      filtrso(){
-
-        if(this.$store.state.checado == true)
-          $('.ui.checkbox').checkbox('toggle');
-      },
       volta(){
         const pl = {
           pesquisa:""
@@ -63,17 +53,21 @@
           pesquisa: this.texto
         }
         this.$store.commit('SET_BUSCA',pl)
-      }
+        this.$router.push('/')
+      },
+    },
+    mounted(){
+      this.$store.commit('SET_PESQUISACBO',false)
+      this.$store.commit('SET_PESQUISAPAL',false)
     }
   }
 </script>
 <style type="text/css">
 #socials{
   display: flex;
-  margin-left: 200px;
-  justify-content: flex-end;
+  right: 25px;
   filter: invert(100%);
-  align-content: stretch;  
   align-items: center;
+  position: fixed;
 }
 </style>

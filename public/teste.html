@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
- <meta charset="utf-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
- <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
- <link rel="stylesheet" type="text/css" href="style.css">
- <script  src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
- <script src="semantic/dist/semantic.min.js"></script>
- <script type="text/javascript" src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>
- <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
+  <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script  src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>
+  <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
+  <script src="../node_modules/chart.js/dist/Chart.js"></script>
 </head>
 <body>
  <div id="desc">
    <div id="texto">
-
-     <div class="ui items">
+    <div class="ui items">
       <div class="item">
         <div class="ui tiny image link">
           <img src="../src/assets/icones/florist.png">
@@ -35,12 +35,56 @@
             <p>Formaçao/experiencia:</p>
             <span>Para o exercício dessas ocupações requer-se, no mínimo, quarta série do ensino fundamental, mais curso profissionalizante de duzentas horas-aula (adestradores, inseminadores de animais, casqueadores de animais e ferradores de animais) e cursos eventuais (para as demais ocupações), oferecidos pelas associações, cooperativas, órgãos governamentais de apoio à agropecuária e à extensão rural e instituições de formação profissional. O desempenho pleno das atividades requer de um a dois anos de experiência. A(s) ocupação(ões) elencada(s) nesta família ocupacional, demandam formação profissional para efeitos do cálculo do número de aprendizes a serem contratados pelos estabelecimentos, nos termos do artigo 429 da Consolidação das Leis do Trabalho - CLT, exceto os casos previstos no art. 10 do decreto 5. 598/2005.</span>
           </div>
-          <div class="ui divider"></div>  
         </div>
       </div>
-    </div> 
-  </div>
+      <div class="ui divider"></div>  
+      <div class="header">Gráficos de demissões da area:</div>
+      <div class="ui placeholder segment">
+        <canvas id="myChart" width="400" height="100"></canvas>
+      </div>
+    </div>
+  </div> 
 </div>
+</div>
+<script>
+ var ctx = document.getElementById("myChart");
+ var myChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ["01", "02", "03", "04", "05", "06"],
+    datasets: [{
+      label: 'Demissões',
+      data: [1422,1180,1417,1295,1316,1140],
+      fill:false,
+      backgroundColor:'red',
+      borderColor:"red",
+    },
+    {
+      backgroundColor:"blue",
+      borderColor:"blue",
+      data:[
+      1343,
+      1289,
+      1287,
+      1306,
+      1297,
+      1244
+      ],
+      fill:false,
+      label:"Admissões"
+    }
+    ]
+  },
+  options: {
+    scales: {
+      yAxes: [{
+        ticks: {
+        }
+      }]
+    }
+  }
+});
+</script>
 <style type="text/css">
 #desc{
   display: flex;

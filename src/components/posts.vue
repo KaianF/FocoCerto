@@ -30,38 +30,46 @@
 			return{
 				post:null,
 				imgs:null,
-				endpoint:'http://fococerto123.herokuapp.com/listaNLU?frase='+this.$store.state.busca.pesquisa,
+				endpoint1:'http://fococerto123.herokuapp.com/listaNLU?frase='+this.$store.state.busca.pesquisa,
+				endpoint2:'http://fococerto123.herokuapp.com/lista?nome='+this.$store.state.busca.pesquisa,
+
 			}
 		},
 		methods:{
 			getPost(){
-				axios(this.endpoint).then(response=>{
-					this.post=response.data[0];
-				})
-				.catch(error=>{console.log(error)})
-				axios(this.endpoint).then(response=>{
-					this.imgs=response.data[0];
-				})
-				.catch(error=>{console.log(error)})
-			},
-			getImgUrl(png){
-				var images = require.context('../assets/icones')
-				return images('./'+png)
-			},
-			codigo:function(id){
-				const pl={
-					codigo:id
+				if(this.$store.state.pesquisaPal){
+					axios(this.endpoint2).then(response=>{
+						this.post=response.data[0]
+					}).catch(error=>console.log(error))
 				}
-				this.$store.commit('SET_PESQUISA',pl)
-			}
-		},
-		created(){
-			this.getPost()
-		},
-		computed:{
-			imageSrC:function(){
-				return '../assets/icones/'
+				if(this.$store.state.pesquisaCbo){
+					this.$router.push('/descricao/'+this.$store.state.busca.pesquisa)
+				}
+				if(this.$store.state.pesquisaNormal){
+					axios(this.endpoint1).then(response=>{
+						this.post=response.data[0]
+						this.imgs=response.data[0];
+					}).catch(error=>{console.log(error)})
+				}
+			},
+				getImgUrl(png){
+					var images = require.context('../assets/icones')
+					return images('./'+png)
+				},
+				codigo:function(id){
+					const pl={
+						codigo:id
+					}
+					this.$store.commit('SET_PESQUISA',pl)
+				}
+			},
+			created(){
+				this.getPost()
+			},
+			computed:{
+				imageSrC:function(){
+					return '../assets/icones/'
+				}
 			}
 		}
-	}
-</script>
+	</script>

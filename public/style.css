@@ -106,6 +106,7 @@
 	display: flex;
 	align-items: center;
 	transition: 1s;
+	transition-duration: 1s;
 }
 .areapesq{
 	align-items: center;
@@ -158,8 +159,8 @@
 .lista{
 	overflow-y: scroll;
 	width: 70%;
-	height: 700px;
-	margin-top: 10rem;
+	height: 800px;
+	margin-top: 8rem;
 	align-self: center;
 }
 #menu{

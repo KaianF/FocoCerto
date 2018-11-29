@@ -1,11 +1,10 @@
-/* eslint-disable */
 <template>
 	<div id="app">
 		<transition appear name="trnas" enter-active-class="animated fadeInLeft" leave-active-class="animated fadeOutRight" mode="out-in">
 			<template>
-				<menuv v-if="!mudatela"></menuv>
-				<router-view></router-view>
-				<posts v-if="mudatela"></posts>
+				<menuv v-if="!pip"></menuv>
+				<router-view ></router-view>
+				<posts v-if="pip"></posts>
 			</template>
 		</transition>
 
@@ -20,17 +19,23 @@
 			posts,
 			menuv
 		},
-		data(){
-			return{
-			}
-		},
 		computed:{
-		mudatela(){
-				if(this.$store.state.busca.pesquisa == '' || this.$store.state.busca.pesquisa == null||this.$store.state.busca.pesquisa == '')
-					return false;
-				else
+			pip(){
+				if(this.$store.state.busca.pesquisa != "")
 					return true;
+				if(this.$route.params.ids != null)
+					return true;
+				return false
+			},
+			router(){
+				if(this.$store.state.ativa)
+					return true
+				else
+					return false
+				return false
 			}
-		}
+
+			
+		},
 	}
 </script>
