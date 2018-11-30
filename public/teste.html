@@ -17,73 +17,18 @@
 </head>
 <body>
  <div id="desc">
-   <div id="texto">
-    <div class="ui items">
-      <div class="item">
-        <div class="ui tiny image link">
-          <img src="../src/assets/icones/florist.png">
-        </div>
-        <div class="middle aligned content">
-          <a class="header">Tratadores polivalentes de animais</a>
-          <div class="description">
-            <p>Condiçoes exercicio:</p>
-            <span>Trabalham em pequenas e médias propriedades rurais, fundações, canis e haras, predominantemente do setor privado, como assalariado, com carteira assinada. Há, também, trabalhadores por conta própria, como os inseminadores, adestradores de animais,casqueadores de animais e ferradores de animais. Organizam-se individualmente ou em equipe, sob supervisão ocasional de trabalhadores mais experientes. Trabalham a céu aberto, durante o dia, alguns ficam sujeitos a posições desconfortáveis,bem como expostos a ruídos e ataques de animais.</span>
-            <br><br>
-            <p>Descriçao sumária:</p>
-            <span>Manejam, alimentam e monitoram a saúde e o comportamento de animais da pecuária. Condicionam e adestram animais. Sob orientação de veterinários e técnicos, tratam sanidade de animais, manipulando e aplicando medicamentos e vacinas, higienizam animais e recintos; aplicam técnicas de inseminação,castração, casqueamento e ferrageamento. Realizam atividades de apoio, assessorando em intervenções cirúrgicas, exames clínicos e radiológicos, pesquisas, necropsias e sacrifícios de animais.</span>
-            <br><br>
-            <p>Formaçao/experiencia:</p>
-            <span>Para o exercício dessas ocupações requer-se, no mínimo, quarta série do ensino fundamental, mais curso profissionalizante de duzentas horas-aula (adestradores, inseminadores de animais, casqueadores de animais e ferradores de animais) e cursos eventuais (para as demais ocupações), oferecidos pelas associações, cooperativas, órgãos governamentais de apoio à agropecuária e à extensão rural e instituições de formação profissional. O desempenho pleno das atividades requer de um a dois anos de experiência. A(s) ocupação(ões) elencada(s) nesta família ocupacional, demandam formação profissional para efeitos do cálculo do número de aprendizes a serem contratados pelos estabelecimentos, nos termos do artigo 429 da Consolidação das Leis do Trabalho - CLT, exceto os casos previstos no art. 10 do decreto 5. 598/2005.</span>
-          </div>
-        </div>
-      </div>
-      <div class="ui divider"></div>  
-      <div class="header">Gráficos de demissões da area:</div>
-      <div class="ui placeholder segment">
-        <canvas id="myChart" width="400" height="100"></canvas>
-      </div>
+  <div class="ui modal">
+  <i class="close icon"></i>
+  <div class="header">
+    Insituições de ensino
+  </div>
+    <div class="description">
+      <p>this photo?</p>
     </div>
-  </div> 
-</div>
+  </div>
+  </div>
 </div>
 <script>
- var ctx = document.getElementById("myChart");
- var myChart = new Chart(ctx, {
-  type: 'line',
-  data: {
-    labels: ["01", "02", "03", "04", "05", "06"],
-    datasets: [{
-      label: 'Demissões',
-      data: [1422,1180,1417,1295,1316,1140],
-      fill:false,
-      backgroundColor:'red',
-      borderColor:"red",
-    },
-    {
-      backgroundColor:"blue",
-      borderColor:"blue",
-      data:[
-      1343,
-      1289,
-      1287,
-      1306,
-      1297,
-      1244
-      ],
-      fill:false,
-      label:"Admissões"
-    }
-    ]
-  },
-  options: {
-    scales: {
-      yAxes: [{
-        ticks: {
-        }
-      }]
-    }
-  }
-});
 </script>
 <style type="text/css">
 #desc{

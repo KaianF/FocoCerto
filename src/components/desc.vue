@@ -1,7 +1,7 @@
 <template>
 	<div id="desc">
 		<hmenu></hmenu>
-		<div id="teste">
+		<div id="teste" style="z-index=-1;">
 			<div id="texto">
 				<div class="ui items">
 					<div class="item">
@@ -23,97 +23,112 @@
 						</div>
 					</div>
 					<div class="ui divider"></div> 
-					<div class="kaian" style="display:flex;">
+					<div class="kaian" style="display:flex" >
 						<div class="ui placeholder segment" id="grafico">
 							<div class="header">Gráficos de demissões da area:</div>
 							<graf></graf>
 						</div>
-						<div class="header" style="margin-left: 5rem"><div class="ui list">
-							<div class="item">
-								<i class="users icon"></i>
-								<div class="content">
-									Semantic UI
+						<div class="ui mini list" id="tes">
+							<div v-for="vaga in vagas">
+								<div class="header" style="margin-bottom:40px;font-size:25px">Vagas de emprego</div>
+								<div class="item">{{vaga.titulo}}</div>
+								<div class="item">Data: {{vaga.data}}</div>
+								<div class="item">Descrição: {{vaga.descricao}}</div>
+								<div class="item">Empregador: {{vaga.empregador}}</div>
+								<div class="item">Visto em:<a :href="vaga.link">{{vaga.link}}</a></div>
+								<div class="item">Local: {{vaga.local}}</div>
+							</div>
+						</div>
+					</div>
+					<div class="ui divider"></div>
+					<div class="lua">
+						<div class="ui list">
+							<div class="header" style="font-size:25px;margin-bottom:1rem;">Lista de faculdades:</div>
+							<div v-for="facul in faculdades">
+								<div class="item">{{facul.nome}}</div>
+								<button @click.nativ="modas" class="ui secondary button">Instituições</button>
+								<div class="ui modal">
+									<i class="close icon"></i>
+									<div class="header">
+										Insituições de ensino
+									</div>
+									<div class="description">
+										<p>{{facul.ies}}</p>
+									</div>
 								</div>
 							</div>
-							<div class="item">
-								<i class="marker icon"></i>
-								<div class="content">
-									New York, NY
-								</div>
-							</div>
-							<div class="item">
-								<i class="mail icon"></i>
-								<div class="content">
-									<a href="mailto:jack@semantic-ui.com">jack@semantic-ui.com</a>
-								</div>
-							</div>
-							<div class="item">
-								<i class="linkify icon"></i>
-								<div class="content">
-									<a href="http://www.semantic-ui.com">semantic-ui.com</a>
-								</div>
-							</div>
-						</div></div> 
+						</div>
 					</div>
 				</div> 
 			</div>
-		</div>
+		</div> 
 	</div>
+</div>
+</div>
 </template>
 <script type="text/javascript">
-	import hmenu from './hmenu.vue'
-	import axios from 'axios'
-	import Chart from 'chart.js'
-	import graf from './grafico.vue'
-	export default{
-		components:{
-			hmenu,
-			graf
-		},
-		name:'Desc',
-		props:['ids'],
-		data(){
-			return{
-				desc:null,
-				endpoint:'http://fococerto123.herokuapp.com/descricao?codigo=',
+import hmenu from './hmenu.vue'
+import axios from 'axios'
+import Chart from 'chart.js'
+import graf from './grafico.vue'
+export default{
+	components:{
+		hmenu,
+		graf
+	},
+	name:'Desc',
+	props:['ids'],
+	data(){
+		return{
+			desc:null,
+			vagas:null,
+			faculdades:null,
+			endpoint:'http://fococerto123.herokuapp.com/descricao?codigo=',
+		}
+	},
+	methods:{
+		getPost(){
+			if(this.ids!=null){
+				axios(this.endpoint+this.ids).then(response=>{
+					this.desc = response.data;
+					this.vagas = response.data.vaga;
+					this.faculdades = response.data.faculdades;
+					this.setgraf();
+				})
+				.catch(error=>{console.log(error)})
+			}
+			else{
+				axios(this.endpoint+this.$store.state.pesquisa.codigo).then(response=>{
+					this.vagas = response.data.vaga;
+					this.faculdades = response.data.faculdades;
+					this.desc = response.data;
+					this.setgraf();
+				}).catch(error=>{console.log(error)})
 			}
 		},
-		methods:{
-			getPost(){
-				if(this.ids!=null){
-					axios(this.endpoint+this.ids).then(response=>{
-						this.desc = response.data;
-						this.setgraf();
-					})
-					.catch(error=>{console.log(error)})
-				}
-				else{
-					axios(this.endpoint+this.$store.state.pesquisa.codigo).then(response=>{
-						this.desc = response.data;
-						this.setgraf();
-					}).catch(error=>{console.log(error)})
-				}
-			},
-			setgraf(){
-				const pl = {
-					datasets:this.desc.chart.datasets,
-					labels:this.desc.chart.labels,
-					cdatasets:this.desc.chartCnae.datasets,
-					clabels:this.desc.chartCnae.labels
-				}
-				this.$store.commit('SET_GRAFICO',pl)
-			},
-			getImgUrl(png){
-				var images = require.context('../assets/icones',false,/\.png$/)
-				console.log(png)
-				return images('./'+png)
+		modas:function(){
+			$('.ui.modal').modal("show");
+		},
+		setgraf(){
+			const pl = {
+				datasets:this.desc.chart.datasets,
+				labels:this.desc.chart.labels,
+				cdatasets:this.desc.chartCnae.datasets,
+				clabels:this.desc.chartCnae.labels
 			}
+			this.$store.commit('SET_GRAFICO',pl)
 		},
-		created(){
-			this.getPost()
-		},
+		getImgUrl(png){
+			var images = require.context('../assets/icones',false,/\.png$/)
+			console.log(png)
+			return images('./'+png)
+		}
+	},
+	created(){
+		this.getPost()
+	},
 
-	}
+}
 </script>
 <style type="text/css">
 #teste{
@@ -127,16 +142,36 @@
 	font-size: 25px;
 	width: 85%;
 	height: 100%;
-	z-index: -1;
-}
-#desc span{
-	display: inline-block;
-	text-indent: 10px;
 }
 #grafico{
 	width: 50%;
 	justify-content: center;
 	color: black;
 	align-self: flex-start;
+}
+.item{
+	margin-bottom:15px;
+}
+#texto{
+}
+#hmenu{
+	position: absolute;
+	z-index: 1;
+}
+#filtro{
+	margin-top: 15px;
+}
+.lua{
+	font-size: 15px;
+	width: 100%;
+	height:400px;
+	margin-bottom: 1px;
+	overflow-y:auto;
+}
+#tes{
+	height:400px;
+	overflow-y:auto;
+	width:50%;
+	margin-left:5rem;
 }
 </style>
