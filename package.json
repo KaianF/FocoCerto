@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "postinstall": "npm run build",
+    "start": "node server.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -11,6 +13,7 @@
     "animate.css": "^3.7.0",
     "axios": "^0.18.0",
     "chart.js": "^2.7.3",
+    "express": "^4.16.4",
     "fullpage.js": "^3.0.3",
     "gulp": "^3.9.1",
     "ionicons": "^4.4.7",
