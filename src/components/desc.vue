@@ -116,8 +116,6 @@
 				}
 			},
 			moda:function(){
-				$('.ui.modal').modal('hide others')
-				$('.ui.modal').modal('toggle')
 				$('.ui.accordion').accordion('refresh');
 				console.log("aa")
 			},
