@@ -699,7 +699,7 @@ let MdWifiIcon  = () => import('./md-wifi.vue')
 let MdWineIcon  = () => import('./md-wine.vue')
 
 const plugin = component => {
-  install: Vue => {
+  Vue => {
     Vue.component(component.name, component)
   }
 }
