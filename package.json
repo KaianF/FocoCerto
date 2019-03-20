@@ -12,6 +12,7 @@
   "dependencies": {
     "animate.css": "^3.7.0",
     "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
     "chart.js": "^2.8.0",
     "ionicons": "^4.4.7",
     "jquery": "^3.3.1",
@@ -32,7 +33,7 @@
   },
   "eslintConfig": {
     "root": true,
-    "rules": {"no-console": "off"},
+    "rules": {},
     "env": {
       "node": true
     },
@@ -41,7 +42,6 @@
       "eslint:recommended",
       "@vue/standard"
     ],
-    "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
     }

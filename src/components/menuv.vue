@@ -99,6 +99,7 @@
     </div>
   </template>
 <script type="text/javascript">
+import 'babel-polyfill'
 import filtro from './filtro.vue'
 import dashboard from 'vue-ionicons/dist/md-menu.vue'
 import close from 'vue-ionicons/dist/md-close-circle-outline.vue'

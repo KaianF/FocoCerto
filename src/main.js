@@ -3,6 +3,7 @@ import router from './router'
 import store from './vuex/store'
 import Vuex from 'vuex'
 import FocoCerto from './FocoCerto.vue'
+import 'babel-polyfill'
 import Router from 'vue-router'
 
 Vue.config.productionTip = false

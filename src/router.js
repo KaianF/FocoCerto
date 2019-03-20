@@ -7,7 +7,6 @@ import graf from './components/grafico.vue'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
   routes: [
     {
       path: '/',
