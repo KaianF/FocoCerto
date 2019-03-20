@@ -1,5 +1,7 @@
 <template>
   <div id="menuv">
+    <!-- esse componente e responsavel pelo menu vertical que fica a esquerda logo na tela inicial do projeto
+    quando clicar no botao hamburger sera aberto o menu vertical com as informacoes la -->
     <dashboard class ="hambm" w="50px" h="50px" @click.native="abremenu"></dashboard>
     <div class="ui sidebar vertical menu">
       <close w="50px" h="50px" @click.native="fechamenu"></close>
@@ -15,6 +17,7 @@
           </div>
         </div>
       </div>
+      <!-- footer do menu com os icones -->
       <div class="ui fixed socials">
         <facebook title="facebook" w="50px" h="50px"></facebook>
         <github title="github" w="50px" h="50px"></github>
