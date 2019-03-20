@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "md-clipboard-icon",
+  name: 'md-clipboard-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Md Clipboard Icon"
+    let iconTitle = this.title ? this.title : 'Md Clipboard Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

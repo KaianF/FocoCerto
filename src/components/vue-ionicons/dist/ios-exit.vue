@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "ios-exit-icon",
+  name: 'ios-exit-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Ios Exit Icon"
+    let iconTitle = this.title ? this.title : 'Ios Exit Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

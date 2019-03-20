@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "ios-share-alt-icon",
+  name: 'ios-share-alt-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Ios Share Alt Icon"
+    let iconTitle = this.title ? this.title : 'Ios Share Alt Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

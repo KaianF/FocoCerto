@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "logo-octocat-icon",
+  name: 'logo-octocat-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Logo Octocat Icon"
+    let iconTitle = this.title ? this.title : 'Logo Octocat Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

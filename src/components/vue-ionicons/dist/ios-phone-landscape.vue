@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "ios-phone-landscape-icon",
+  name: 'ios-phone-landscape-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Ios Phone Landscape Icon"
+    let iconTitle = this.title ? this.title : 'Ios Phone Landscape Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

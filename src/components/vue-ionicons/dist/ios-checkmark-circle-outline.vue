@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "ios-checkmark-circle-outline-icon",
+  name: 'ios-checkmark-circle-outline-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Ios Checkmark Circle Outline Icon"
+    let iconTitle = this.title ? this.title : 'Ios Checkmark Circle Outline Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

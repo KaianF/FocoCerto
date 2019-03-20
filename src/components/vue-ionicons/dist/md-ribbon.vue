@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "md-ribbon-icon",
+  name: 'md-ribbon-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Md Ribbon Icon"
+    let iconTitle = this.title ? this.title : 'Md Ribbon Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

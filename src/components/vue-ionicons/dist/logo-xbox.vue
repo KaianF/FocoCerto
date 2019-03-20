@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "logo-xbox-icon",
+  name: 'logo-xbox-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Logo Xbox Icon"
+    let iconTitle = this.title ? this.title : 'Logo Xbox Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

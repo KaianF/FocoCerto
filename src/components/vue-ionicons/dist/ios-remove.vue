@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "ios-remove-icon",
+  name: 'ios-remove-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Ios Remove Icon"
+    let iconTitle = this.title ? this.title : 'Ios Remove Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

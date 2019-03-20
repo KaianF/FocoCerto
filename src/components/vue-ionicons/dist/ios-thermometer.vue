@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "ios-thermometer-icon",
+  name: 'ios-thermometer-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Ios Thermometer Icon"
+    let iconTitle = this.title ? this.title : 'Ios Thermometer Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

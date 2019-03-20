@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "ios-thumbs-down-icon",
+  name: 'ios-thumbs-down-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Ios Thumbs Down Icon"
+    let iconTitle = this.title ? this.title : 'Ios Thumbs Down Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

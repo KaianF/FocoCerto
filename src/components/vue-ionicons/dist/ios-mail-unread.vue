@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "ios-mail-unread-icon",
+  name: 'ios-mail-unread-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Ios Mail Unread Icon"
+    let iconTitle = this.title ? this.title : 'Ios Mail Unread Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

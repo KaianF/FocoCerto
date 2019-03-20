@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "ios-tablet-portrait-icon",
+  name: 'ios-tablet-portrait-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Ios Tablet Portrait Icon"
+    let iconTitle = this.title ? this.title : 'Ios Tablet Portrait Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

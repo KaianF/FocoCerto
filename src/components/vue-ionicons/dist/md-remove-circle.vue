@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "md-remove-circle-icon",
+  name: 'md-remove-circle-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Md Remove Circle Icon"
+    let iconTitle = this.title ? this.title : 'Md Remove Circle Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

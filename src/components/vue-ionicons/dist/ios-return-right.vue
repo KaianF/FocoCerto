@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "ios-return-right-icon",
+  name: 'ios-return-right-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Ios Return Right Icon"
+    let iconTitle = this.title ? this.title : 'Ios Return Right Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "ios-help-circle-icon",
+  name: 'ios-help-circle-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Ios Help Circle Icon"
+    let iconTitle = this.title ? this.title : 'Ios Help Circle Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

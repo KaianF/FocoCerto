@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "md-fastforward-icon",
+  name: 'md-fastforward-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Md Fastforward Icon"
+    let iconTitle = this.title ? this.title : 'Md Fastforward Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

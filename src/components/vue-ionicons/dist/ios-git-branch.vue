@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "ios-git-branch-icon",
+  name: 'ios-git-branch-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Ios Git Branch Icon"
+    let iconTitle = this.title ? this.title : 'Ios Git Branch Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

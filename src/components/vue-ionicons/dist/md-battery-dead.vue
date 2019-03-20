@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "md-battery-dead-icon",
+  name: 'md-battery-dead-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Md Battery Dead Icon"
+    let iconTitle = this.title ? this.title : 'Md Battery Dead Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

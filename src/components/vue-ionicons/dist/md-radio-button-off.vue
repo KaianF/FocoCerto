@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "md-radio-button-off-icon",
+  name: 'md-radio-button-off-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Md Radio Button Off Icon"
+    let iconTitle = this.title ? this.title : 'Md Radio Button Off Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

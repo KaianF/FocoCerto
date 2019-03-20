@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "ios-pause-icon",
+  name: 'ios-pause-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Ios Pause Icon"
+    let iconTitle = this.title ? this.title : 'Ios Pause Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

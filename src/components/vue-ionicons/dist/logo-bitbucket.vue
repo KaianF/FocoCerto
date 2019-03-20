@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "logo-bitbucket-icon",
+  name: 'logo-bitbucket-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Logo Bitbucket Icon"
+    let iconTitle = this.title ? this.title : 'Logo Bitbucket Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

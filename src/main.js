@@ -8,7 +8,7 @@ import Router from 'vue-router'
 Vue.config.productionTip = false
 
 new Vue({
-	el:'#app',
+  el: '#app',
   render: h => h(FocoCerto),
   router,
   store

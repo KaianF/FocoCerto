@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "md-chatboxes-icon",
+  name: 'md-chatboxes-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Md Chatboxes Icon"
+    let iconTitle = this.title ? this.title : 'Md Chatboxes Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

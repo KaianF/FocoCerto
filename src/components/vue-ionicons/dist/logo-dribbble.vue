@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "logo-dribbble-icon",
+  name: 'logo-dribbble-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Logo Dribbble Icon"
+    let iconTitle = this.title ? this.title : 'Logo Dribbble Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

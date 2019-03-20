@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "ios-contrast-icon",
+  name: 'ios-contrast-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Ios Contrast Icon"
+    let iconTitle = this.title ? this.title : 'Ios Contrast Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

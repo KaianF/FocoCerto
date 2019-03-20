@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "logo-dropbox-icon",
+  name: 'logo-dropbox-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Logo Dropbox Icon"
+    let iconTitle = this.title ? this.title : 'Logo Dropbox Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "logo-steam-icon",
+  name: 'logo-steam-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Logo Steam Icon"
+    let iconTitle = this.title ? this.title : 'Logo Steam Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

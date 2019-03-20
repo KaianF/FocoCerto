@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "logo-vimeo-icon",
+  name: 'logo-vimeo-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Logo Vimeo Icon"
+    let iconTitle = this.title ? this.title : 'Logo Vimeo Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

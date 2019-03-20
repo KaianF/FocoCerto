@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "ios-stopwatch-icon",
+  name: 'ios-stopwatch-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Ios Stopwatch Icon"
+    let iconTitle = this.title ? this.title : 'Ios Stopwatch Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

@@ -4,7 +4,7 @@ const A_SHAKE = 'shake'
 
 export default {
   computed: {
-    ionClass() {
+    ionClass () {
       let addClass = ''
       if (this.animate === A_ROTATE) {
         addClass = 'ion-rotate '

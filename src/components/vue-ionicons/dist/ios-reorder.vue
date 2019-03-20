@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "ios-reorder-icon",
+  name: 'ios-reorder-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Ios Reorder Icon"
+    let iconTitle = this.title ? this.title : 'Ios Reorder Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

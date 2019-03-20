@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "logo-whatsapp-icon",
+  name: 'logo-whatsapp-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Logo Whatsapp Icon"
+    let iconTitle = this.title ? this.title : 'Logo Whatsapp Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

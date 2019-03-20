@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "ios-eye-off-icon",
+  name: 'ios-eye-off-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Ios Eye Off Icon"
+    let iconTitle = this.title ? this.title : 'Ios Eye Off Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

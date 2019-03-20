@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "md-git-network-icon",
+  name: 'md-git-network-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Md Git Network Icon"
+    let iconTitle = this.title ? this.title : 'Md Git Network Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

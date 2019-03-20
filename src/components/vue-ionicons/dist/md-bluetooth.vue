@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "md-bluetooth-icon",
+  name: 'md-bluetooth-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Md Bluetooth Icon"
+    let iconTitle = this.title ? this.title : 'Md Bluetooth Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

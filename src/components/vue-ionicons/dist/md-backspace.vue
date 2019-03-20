@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "md-backspace-icon",
+  name: 'md-backspace-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Md Backspace Icon"
+    let iconTitle = this.title ? this.title : 'Md Backspace Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

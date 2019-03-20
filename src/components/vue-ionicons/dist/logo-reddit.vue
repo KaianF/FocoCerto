@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "logo-reddit-icon",
+  name: 'logo-reddit-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Logo Reddit Icon"
+    let iconTitle = this.title ? this.title : 'Logo Reddit Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-

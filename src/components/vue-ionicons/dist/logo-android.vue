@@ -12,16 +12,15 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: "logo-android-icon",
+  name: 'logo-android-icon',
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : "Logo Android Icon"
+    let iconTitle = this.title ? this.title : 'Logo Android Icon'
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
-
