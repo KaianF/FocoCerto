@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'logo-closed-captioning-icon',
+  name: "logo-closed-captioning-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Logo Closed Captioning Icon'
+    let iconTitle = this.title ? this.title : "Logo Closed Captioning Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

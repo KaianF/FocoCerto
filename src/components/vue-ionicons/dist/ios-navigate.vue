@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-navigate-icon',
+  name: "ios-navigate-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Navigate Icon'
+    let iconTitle = this.title ? this.title : "Ios Navigate Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

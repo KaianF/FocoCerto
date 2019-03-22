@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-rewind-icon',
+  name: "ios-rewind-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Rewind Icon'
+    let iconTitle = this.title ? this.title : "Ios Rewind Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

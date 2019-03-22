@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-construct-icon',
+  name: "ios-construct-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Construct Icon'
+    let iconTitle = this.title ? this.title : "Ios Construct Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

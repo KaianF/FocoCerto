@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-git-compare-icon',
+  name: "ios-git-compare-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Git Compare Icon'
+    let iconTitle = this.title ? this.title : "Ios Git Compare Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'logo-game-controller-a-icon',
+  name: "logo-game-controller-a-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Logo Game Controller A Icon'
+    let iconTitle = this.title ? this.title : "Logo Game Controller A Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

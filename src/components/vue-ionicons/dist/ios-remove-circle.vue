@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-remove-circle-icon',
+  name: "ios-remove-circle-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Remove Circle Icon'
+    let iconTitle = this.title ? this.title : "Ios Remove Circle Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

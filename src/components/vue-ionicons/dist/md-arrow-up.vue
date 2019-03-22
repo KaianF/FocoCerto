@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'md-arrow-up-icon',
+  name: "md-arrow-up-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Md Arrow Up Icon'
+    let iconTitle = this.title ? this.title : "Md Arrow Up Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'logo-windows-icon',
+  name: "logo-windows-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Logo Windows Icon'
+    let iconTitle = this.title ? this.title : "Logo Windows Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

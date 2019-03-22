@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'logo-freebsd-devil-icon',
+  name: "logo-freebsd-devil-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Logo Freebsd Devil Icon'
+    let iconTitle = this.title ? this.title : "Logo Freebsd Devil Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

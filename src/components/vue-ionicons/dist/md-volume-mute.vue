@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'md-volume-mute-icon',
+  name: "md-volume-mute-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Md Volume Mute Icon'
+    let iconTitle = this.title ? this.title : "Md Volume Mute Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

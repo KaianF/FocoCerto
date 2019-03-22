@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-heart-half-icon',
+  name: "ios-heart-half-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Heart Half Icon'
+    let iconTitle = this.title ? this.title : "Ios Heart Half Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

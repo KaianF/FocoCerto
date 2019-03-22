@@ -1,7 +1,5 @@
 <template>
   <div id="menuv">
-    <!-- esse componente e responsavel pelo menu vertical que fica a esquerda logo na tela inicial do projeto
-    quando clicar no botao hamburger sera aberto o menu vertical com as informacoes la -->
     <dashboard class ="hambm" w="50px" h="50px" @click.native="abremenu"></dashboard>
     <div class="ui sidebar vertical menu">
       <close w="50px" h="50px" @click.native="fechamenu"></close>
@@ -17,11 +15,11 @@
           </div>
         </div>
       </div>
-      <!-- footer do menu com os icones -->
       <div class="ui fixed socials">
         <facebook title="facebook" w="50px" h="50px"></facebook>
         <github title="github" w="50px" h="50px"></github>
-        <about title="about" w="50px" h="50px" style="cursor: pointer;" @click.native="about"></about>
+        <about title="about" w="50px"h="50px" style="cursor: pointer;" @click.native="about"></about>
+
 
         <div class="ui modal" id="about">
           <div class="header">Sobre nós</div>
@@ -98,54 +96,54 @@
       </div>
     </div>
   </template>
-<script type="text/javascript">
-import 'babel-polyfill'
-import filtro from './filtro.vue'
-import dashboard from 'vue-ionicons/dist/md-menu.vue'
-import close from 'vue-ionicons/dist/md-close-circle-outline.vue'
-import facebook from 'vue-ionicons/dist/logo-facebook.vue'
-import github from 'vue-ionicons/dist/logo-github.vue'
-import about from 'vue-ionicons/dist/md-code.vue'
-import $ from 'jquery'
-export default{
-  components: {
-    filtro,
-    dashboard,
-    close,
-    facebook,
-    github,
-    about
-  },
-  data () {
-    return {
-      texto: null,
-      pesquisaDireta: false
-    }
-  },
+  <script type="text/javascript">
+    import filtro from './filtro.vue'
+    import dashboard from 'vue-ionicons/dist/md-menu.vue'
+    import close from 'vue-ionicons/dist/md-close-circle-outline.vue'
+    import facebook from 'vue-ionicons/dist/logo-facebook.vue'
+    import github from 'vue-ionicons/dist/logo-github.vue'
+    import about from 'vue-ionicons/dist/md-code.vue'
+    import funnel from 'vue-ionicons/dist/md-funnel.vue'
+    export default{
+      components:{
+        filtro,
+        dashboard,
+        close,
+        facebook,
+        github,
+        about,
+        funnel
+      },
+      data(){
+        return{
+          texto:null,
+          pesquisaDireta:false
+        }
+      },
 
-  methods: {
-    abremenu: function () {
-      $('.ui.sidebar').sidebar('setting', 'transition', 'overlay')
-      $('.ui.sidebar').sidebar('toggle')
-    },
-    fechamenu: function () {
-      $('.ui.sidebar').sidebar('hide')
-      console.log('e')
-    },
-    pesquisa () {
-      const pl = {
-        pesquisa: this.texto
+      methods:{
+        abremenu:function(){
+          $('.ui.sidebar').sidebar('setting','transition','overlay');
+          $('.ui.sidebar').sidebar('toggle');
+        },
+        fechamenu:function(){
+          $('.ui.sidebar').sidebar('hide');
+          console.log("e")
+        },
+        pesquisa(){
+          const pl = {
+            pesquisa: this.texto
+          }
+          this.$store.commit('SET_BUSCA',pl)
+        },
+        modal:function(){
+          $('#como').modal('toggle')
+
+          console.log('merda')
+        },
+        about:function(){
+          $('#about').modal('toggle')
+        }
       }
-      this.$store.commit('SET_BUSCA', pl)
-    },
-    modal: function () {
-      $('#como').modal('toggle')
-
-      console.log('merda')
-    },
-    about: function () {
-      $('#about').modal('toggle')
     }
-  }
-}
-</script>
+  </script>

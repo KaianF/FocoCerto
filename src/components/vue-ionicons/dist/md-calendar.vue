@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'md-calendar-icon',
+  name: "md-calendar-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Md Calendar Icon'
+    let iconTitle = this.title ? this.title : "Md Calendar Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-finger-print-icon',
+  name: "ios-finger-print-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Finger Print Icon'
+    let iconTitle = this.title ? this.title : "Ios Finger Print Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

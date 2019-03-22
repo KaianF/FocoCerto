@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'md-return-left-icon',
+  name: "md-return-left-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Md Return Left Icon'
+    let iconTitle = this.title ? this.title : "Md Return Left Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

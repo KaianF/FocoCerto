@@ -75,54 +75,54 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> 
   </template>
-<script type="text/javascript">
-import filtro from './filtro.vue'
-import facebook from 'vue-ionicons/dist/logo-facebook.vue'
-import github from 'vue-ionicons/dist/logo-github.vue'
-import about from 'vue-ionicons/dist/md-code.vue'
-import search from 'vue-ionicons/dist/md-search.vue'
-import posts from './posts.vue'
-export default{
-  data () {
-    return {
-      texto: null
-    }
-  },
-  components: {
-    filtro,
-    search,
-    posts,
-    about,
-    github,
-    facebook
-  },
-  methods: {
-    volta () {
-      const pl = {
-        pesquisa: ''
+  <script type="text/javascript">
+    import filtro from './filtro.vue'
+    import facebook from 'vue-ionicons/dist/logo-facebook.vue'
+    import github from 'vue-ionicons/dist/logo-github.vue'
+    import about from 'vue-ionicons/dist/md-code.vue'
+    import search from 'vue-ionicons/dist/md-search.vue'
+    import posts from './posts.vue'
+    export default{
+      data(){
+        return{
+          texto:null
+        }
+      },
+      components:{
+        filtro,
+        search,
+        posts,
+        about,
+        github,
+        facebook
+      },
+      methods:{
+        volta(){
+          const pl = {
+            pesquisa:""
+          }
+          this.$store.commit('SET_BUSCA',pl)
+          this.$router.push('/')
+        },
+        about:function(){
+          $('#about').modal('toggle')
+        },
+        pesquisa(){
+          const pl = {
+            pesquisa: this.texto
+          }
+          this.$store.commit('SET_BUSCA',pl)
+          this.$router.push('/')
+        },
+      },
+      mounted(){
+        this.$store.commit('SET_PESQUISACBO',false)
+        this.$store.commit('SET_PESQUISAPAL',false)
       }
-      this.$store.commit('SET_BUSCA', pl)
-      this.$router.push('/')
-    },
-    about: function () {
-      $('#about').modal('toggle')
-    },
-    pesquisa () {
-      const pl = {
-        pesquisa: this.texto
-      }
-      this.$store.commit('SET_BUSCA', pl)
-      this.$router.push('/')
     }
-  },
-  mounted () {
-    this.$store.commit('SET_PESQUISACBO', false)
-    this.$store.commit('SET_PESQUISAPAL', false)
-  }
-}
-</script>
+  </script>
   <style type="text/css">
   #socials{
     display: flex;

@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'md-appstore-icon',
+  name: "md-appstore-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Md Appstore Icon'
+    let iconTitle = this.title ? this.title : "Md Appstore Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

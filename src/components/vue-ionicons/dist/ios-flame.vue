@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-flame-icon',
+  name: "ios-flame-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Flame Icon'
+    let iconTitle = this.title ? this.title : "Ios Flame Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

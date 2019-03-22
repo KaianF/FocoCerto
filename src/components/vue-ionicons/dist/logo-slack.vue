@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'logo-slack-icon',
+  name: "logo-slack-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Logo Slack Icon'
+    let iconTitle = this.title ? this.title : "Logo Slack Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

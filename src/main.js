@@ -3,13 +3,12 @@ import router from './router'
 import store from './vuex/store'
 import Vuex from 'vuex'
 import FocoCerto from './FocoCerto.vue'
-import 'babel-polyfill'
 import Router from 'vue-router'
 
 Vue.config.productionTip = false
 
 new Vue({
-  el: '#app',
+	el:'#app',
   render: h => h(FocoCerto),
   router,
   store

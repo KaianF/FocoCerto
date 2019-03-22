@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'logo-playstation-icon',
+  name: "logo-playstation-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Logo Playstation Icon'
+    let iconTitle = this.title ? this.title : "Logo Playstation Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

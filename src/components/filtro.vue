@@ -34,39 +34,40 @@
 	</div>
 </template>
 <script type="text/javascript">
-import funil from './vue-ionicons/dist/md-funnel.vue'
-export default{
-  components: {
-    funil
-  },
-  data () {
-    return {
-      teste: null,
-      alome: null
-    }
-  },
-  methods: {
-    filtro () {
-      var p = document.getElementById('p').checked
-      var cbo = document.getElementById('cbo').checked
-      var no = document.getElementById('n').checked
-      if (p == true) {
-        document.getElementById('p').checked = true
-        this.$store.commit('SET_PESQUISAPAL', true)
-        this.$store.commit('SET_PESQUISACBO', false)
-        this.$store.commit('SET_PESQUISANORMAL', false)
-      }
-      if (cbo == true) {
-        this.$store.commit('SET_PESQUISACBO', true)
-        this.$store.commit('SET_PESQUISANORMAL', false)
-        this.$store.commit('SET_PESQUISAPAL', false)
-      }
-      if (no == true) {
-        this.$store.commit('SET_PESQUISANORMAL', true)
-        this.$store.commit('SET_PESQUISACBO', false)
-        this.$store.commit('SET_PESQUISAPAL', false)
-      }
-    }
-  }
-}
-</script>
+	import funil from './vue-ionicons/dist/md-funnel.vue'
+	export default{
+		components:{
+			funil
+		},
+		data(){
+			return{
+				teste:null,
+				alome:null,
+			}
+		},
+		methods:{
+			filtro(){
+				var p = document.getElementById("p").checked
+				var cbo = document.getElementById("cbo").checked
+				var no = document.getElementById("n").checked
+				if(p == true){
+					document.getElementById("p").checked = true
+					this.$store.commit('SET_PESQUISAPAL',true)
+					this.$store.commit('SET_PESQUISACBO',false)
+					this.$store.commit('SET_PESQUISANORMAL',false)
+				}
+				if(cbo == true){
+					this.$store.commit('SET_PESQUISACBO',true)
+					this.$store.commit('SET_PESQUISANORMAL',false)
+					this.$store.commit('SET_PESQUISAPAL',false)
+				}
+				if(no == true){
+					this.$store.commit('SET_PESQUISANORMAL',true)
+					this.$store.commit('SET_PESQUISACBO',false)
+					this.$store.commit('SET_PESQUISAPAL',false)
+				}
+
+			}
+		}
+	}
+	</script>

@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-skip-backward-icon',
+  name: "ios-skip-backward-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Skip Backward Icon'
+    let iconTitle = this.title ? this.title : "Ios Skip Backward Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

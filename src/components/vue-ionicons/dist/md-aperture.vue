@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'md-aperture-icon',
+  name: "md-aperture-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Md Aperture Icon'
+    let iconTitle = this.title ? this.title : "Md Aperture Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-arrow-back-icon',
+  name: "ios-arrow-back-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Arrow Back Icon'
+    let iconTitle = this.title ? this.title : "Ios Arrow Back Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

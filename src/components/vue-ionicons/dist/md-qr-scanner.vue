@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'md-qr-scanner-icon',
+  name: "md-qr-scanner-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Md Qr Scanner Icon'
+    let iconTitle = this.title ? this.title : "Md Qr Scanner Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

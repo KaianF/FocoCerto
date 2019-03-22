@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'md-checkbox-outline-icon',
+  name: "md-checkbox-outline-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Md Checkbox Outline Icon'
+    let iconTitle = this.title ? this.title : "Md Checkbox Outline Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

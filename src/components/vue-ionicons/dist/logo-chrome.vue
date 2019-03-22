@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'logo-chrome-icon',
+  name: "logo-chrome-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Logo Chrome Icon'
+    let iconTitle = this.title ? this.title : "Logo Chrome Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-medical-icon',
+  name: "ios-medical-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Medical Icon'
+    let iconTitle = this.title ? this.title : "Ios Medical Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'md-flag-icon',
+  name: "md-flag-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Md Flag Icon'
+    let iconTitle = this.title ? this.title : "Md Flag Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'logo-rss-icon',
+  name: "logo-rss-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Logo Rss Icon'
+    let iconTitle = this.title ? this.title : "Logo Rss Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

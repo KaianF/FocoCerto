@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-barcode-icon',
+  name: "ios-barcode-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Barcode Icon'
+    let iconTitle = this.title ? this.title : "Ios Barcode Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

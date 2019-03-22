@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'logo-buffer-icon',
+  name: "logo-buffer-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Logo Buffer Icon'
+    let iconTitle = this.title ? this.title : "Logo Buffer Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

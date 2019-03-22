@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-options-icon',
+  name: "ios-options-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Options Icon'
+    let iconTitle = this.title ? this.title : "Ios Options Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'md-folder-open-icon',
+  name: "md-folder-open-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Md Folder Open Icon'
+    let iconTitle = this.title ? this.title : "Md Folder Open Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

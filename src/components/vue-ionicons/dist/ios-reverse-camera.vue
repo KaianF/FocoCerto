@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-reverse-camera-icon',
+  name: "ios-reverse-camera-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Reverse Camera Icon'
+    let iconTitle = this.title ? this.title : "Ios Reverse Camera Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

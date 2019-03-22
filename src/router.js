@@ -7,23 +7,23 @@ import graf from './components/grafico.vue'
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: FocoCerto,
-      component: FocoCerto
-    },
-    {
-      path: '/pesquisa',
-      name: Pesquisa,
-      component: Pesquisa
-    },
-    {
-      path: '/descricao/:ids',
-      name: 'Desc',
-      component: desc,
-      props: true
-    }
+	routes: [
+	{
+		path:'/',
+		name:FocoCerto,
+		component:FocoCerto,
+	},
+	{
+		path:'/pesquisa',
+		name:Pesquisa,
+		component:Pesquisa,
+	},
+	{
+		path:'/descricao/:ids',
+		name:'Desc',
+		component:desc,
+		props:true
+	}
 
-  ]
+	]
 })

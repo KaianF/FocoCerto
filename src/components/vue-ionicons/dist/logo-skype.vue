@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'logo-skype-icon',
+  name: "logo-skype-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Logo Skype Icon'
+    let iconTitle = this.title ? this.title : "Logo Skype Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

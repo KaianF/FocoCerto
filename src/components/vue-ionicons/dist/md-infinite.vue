@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'md-infinite-icon',
+  name: "md-infinite-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Md Infinite Icon'
+    let iconTitle = this.title ? this.title : "Md Infinite Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

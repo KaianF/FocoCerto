@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-arrow-dropleft-icon',
+  name: "ios-arrow-dropleft-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Arrow Dropleft Icon'
+    let iconTitle = this.title ? this.title : "Ios Arrow Dropleft Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

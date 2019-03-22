@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'md-copy-icon',
+  name: "md-copy-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Md Copy Icon'
+    let iconTitle = this.title ? this.title : "Md Copy Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

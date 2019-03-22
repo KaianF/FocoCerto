@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'logo-youtube-icon',
+  name: "logo-youtube-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Logo Youtube Icon'
+    let iconTitle = this.title ? this.title : "Logo Youtube Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

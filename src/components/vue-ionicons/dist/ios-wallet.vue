@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-wallet-icon',
+  name: "ios-wallet-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Wallet Icon'
+    let iconTitle = this.title ? this.title : "Ios Wallet Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

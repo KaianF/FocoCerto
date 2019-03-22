@@ -22,7 +22,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="ui divider"></div>
+					<div class="ui divider"></div> 
 					<div class="kaian" style="display:flex" >
 						<div class="ui placeholder segment" id="grafico">
 							<div class="header">Gráficos de demissões da area:</div>
@@ -66,86 +66,87 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> 
 		</div>
-	</div>
+	</div> 
 </div>
 </div>
 </div>
 </template>
 <script type="text/javascript">
-import hmenu from './hmenu.vue'
-import axios from 'axios'
-import Chart from 'chart.js'
-import graf from './grafico.vue'
-export default{
-  components: {
-    hmenu,
-    graf
-  },
-  name: 'Desc',
-  props: ['ids'],
-  data () {
-    return {
-      desc: null,
-      vagas: null,
-      faculdades: null,
-      endpoint: 'http://fococerto123.herokuapp.com/descricao?codigo='
-    }
-  },
-  methods: {
-    getPost () {
-      if (this.ids != null) {
-        axios(this.endpoint + this.ids).then(response => {
-          this.desc = response.data
-          this.vagas = response.data.vaga
-          this.faculdades = response.data.faculdades
-          $('.ui.accordion').accordion()
-          this.setgraf()
-        })
-          .catch(error => { console.log(error) })
-      } else {
-        axios(this.endpoint + this.$store.state.pesquisa.codigo).then(response => {
-          this.vagas = response.data.vaga
-          this.faculdades = response.data.faculdades
-          this.desc = response.data
-          $('.ui.accordion').accordion()
-          this.setgraf()
-        }).catch(error => { console.log(error) })
-      }
-    },
-    moda: function () {
-      $('.ui.accordion').accordion('refresh')
-      console.log('aa')
-    },
-    setgraf () {
-      const pl = {
-        datasets: this.desc.chart.datasets,
-        labels: this.desc.chart.labels,
-        cdatasets: this.desc.chartCnae.datasets,
-        clabels: this.desc.chartCnae.labels
-      }
-      $('.ui.accordion').accordion()
-      this.$store.commit('SET_GRAFICO', pl)
-    },
-    getImgUrl (png) {
-      var images = require.context('../assets/icones', false, /\.png$/)
-      console.log(png)
-      return images('./' + png)
-      $('.ui.accordion').accordion()
-    }
-  },
-  created () {
-    this.getPost()
-    $('.ui.accordion').accordion()
-    $('.ui .styled .accordion').ready(function () {
-    })
-  },
-  mounted: function () {
-    $('.ui.accordion').accordion()
-  }
+	import hmenu from './hmenu.vue'
+	import axios from 'axios'
+	import Chart from 'chart.js'
+	import graf from './grafico.vue'
+	export default{
+		components:{
+			hmenu,
+			graf
+		},
+		name:'Desc',
+		props:['ids'],
+		data(){
+			return{
+				desc:null,
+				vagas:null,
+				faculdades:null,
+				endpoint:'http://fococerto123.herokuapp.com/descricao?codigo=',
+			}
+		},
+		methods:{
+			getPost(){
+				if(this.ids!=null){
+					axios(this.endpoint+this.ids).then(response=>{
+						this.desc = response.data;
+						this.vagas = response.data.vaga;
+						this.faculdades = response.data.faculdades;
+						$('.ui.accordion').accordion();
+						this.setgraf();
+					})
+					.catch(error=>{console.log(error)})
+				}
+				else{
+					axios(this.endpoint+this.$store.state.pesquisa.codigo).then(response=>{
+						this.vagas = response.data.vaga;
+						this.faculdades = response.data.faculdades;
+						this.desc = response.data;
+						$('.ui.accordion').accordion();
+						this.setgraf();
+					}).catch(error=>{console.log(error)})
+				}
+			},
+			moda:function(){
+				$('.ui.accordion').accordion('refresh');
+				console.log("aa")
+			},
+			setgraf(){
+				const pl = {
+					datasets:this.desc.chart.datasets,
+					labels:this.desc.chart.labels,
+					cdatasets:this.desc.chartCnae.datasets,
+					clabels:this.desc.chartCnae.labels
+				}
+				$('.ui.accordion').accordion();
+				this.$store.commit('SET_GRAFICO',pl)
+			},
+			getImgUrl(png){
+				var images = require.context('../assets/icones',false,/\.png$/)
+				console.log(png)
+				return images('./'+png)
+				$('.ui.accordion').accordion();
+			}
+		},
+		created(){
+			this.getPost()
+			$('.ui.accordion').accordion();
+			$('.ui .styled .accordion').ready(function(){
+			});
+		},
+		mounted:function(){
+			$('.ui.accordion').accordion();
+		}
 
-}
+	}
 </script>
 <style type="text/css">
 #teste{

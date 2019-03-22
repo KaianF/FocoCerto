@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-battery-dead-icon',
+  name: "ios-battery-dead-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Battery Dead Icon'
+    let iconTitle = this.title ? this.title : "Ios Battery Dead Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

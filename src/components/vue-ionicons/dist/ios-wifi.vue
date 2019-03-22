@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-wifi-icon',
+  name: "ios-wifi-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Wifi Icon'
+    let iconTitle = this.title ? this.title : "Ios Wifi Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

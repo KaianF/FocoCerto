@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'logo-tumblr-icon',
+  name: "logo-tumblr-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Logo Tumblr Icon'
+    let iconTitle = this.title ? this.title : "Logo Tumblr Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-arrow-round-forward-icon',
+  name: "ios-arrow-round-forward-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Arrow Round Forward Icon'
+    let iconTitle = this.title ? this.title : "Ios Arrow Round Forward Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

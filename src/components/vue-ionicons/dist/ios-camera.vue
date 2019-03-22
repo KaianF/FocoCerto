@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-camera-icon',
+  name: "ios-camera-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Camera Icon'
+    let iconTitle = this.title ? this.title : "Ios Camera Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

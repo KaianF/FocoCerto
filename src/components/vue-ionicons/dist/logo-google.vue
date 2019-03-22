@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'logo-google-icon',
+  name: "logo-google-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Logo Google Icon'
+    let iconTitle = this.title ? this.title : "Logo Google Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

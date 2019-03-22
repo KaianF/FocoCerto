@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-checkmark-icon',
+  name: "ios-checkmark-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Checkmark Icon'
+    let iconTitle = this.title ? this.title : "Ios Checkmark Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-backspace-icon',
+  name: "ios-backspace-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Backspace Icon'
+    let iconTitle = this.title ? this.title : "Ios Backspace Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

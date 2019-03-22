@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'logo-foursquare-icon',
+  name: "logo-foursquare-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Logo Foursquare Icon'
+    let iconTitle = this.title ? this.title : "Logo Foursquare Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

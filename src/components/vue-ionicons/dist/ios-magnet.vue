@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-magnet-icon',
+  name: "ios-magnet-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Magnet Icon'
+    let iconTitle = this.title ? this.title : "Ios Magnet Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

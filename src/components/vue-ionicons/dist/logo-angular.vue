@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'logo-angular-icon',
+  name: "logo-angular-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Logo Angular Icon'
+    let iconTitle = this.title ? this.title : "Logo Angular Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

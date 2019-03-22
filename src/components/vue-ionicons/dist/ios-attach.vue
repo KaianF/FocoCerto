@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-attach-icon',
+  name: "ios-attach-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Attach Icon'
+    let iconTitle = this.title ? this.title : "Ios Attach Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

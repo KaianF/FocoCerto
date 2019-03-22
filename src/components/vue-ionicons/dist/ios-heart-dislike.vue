@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-heart-dislike-icon',
+  name: "ios-heart-dislike-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Heart Dislike Icon'
+    let iconTitle = this.title ? this.title : "Ios Heart Dislike Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

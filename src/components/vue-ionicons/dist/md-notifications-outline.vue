@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'md-notifications-outline-icon',
+  name: "md-notifications-outline-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Md Notifications Outline Icon'
+    let iconTitle = this.title ? this.title : "Md Notifications Outline Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

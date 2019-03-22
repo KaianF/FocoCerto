@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-git-commit-icon',
+  name: "ios-git-commit-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Git Commit Icon'
+    let iconTitle = this.title ? this.title : "Ios Git Commit Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

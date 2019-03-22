@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'md-reverse-camera-icon',
+  name: "md-reverse-camera-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Md Reverse Camera Icon'
+    let iconTitle = this.title ? this.title : "Md Reverse Camera Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

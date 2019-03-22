@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-skip-forward-icon',
+  name: "ios-skip-forward-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Skip Forward Icon'
+    let iconTitle = this.title ? this.title : "Ios Skip Forward Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

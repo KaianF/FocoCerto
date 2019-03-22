@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-close-icon',
+  name: "ios-close-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Close Icon'
+    let iconTitle = this.title ? this.title : "Ios Close Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

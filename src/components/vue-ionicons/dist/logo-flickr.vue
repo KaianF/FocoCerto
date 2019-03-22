@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'logo-flickr-icon',
+  name: "logo-flickr-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Logo Flickr Icon'
+    let iconTitle = this.title ? this.title : "Logo Flickr Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

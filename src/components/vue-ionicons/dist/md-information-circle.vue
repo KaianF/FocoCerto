@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'md-information-circle-icon',
+  name: "md-information-circle-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Md Information Circle Icon'
+    let iconTitle = this.title ? this.title : "Md Information Circle Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

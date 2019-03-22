@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'ios-arrow-round-down-icon',
+  name: "ios-arrow-round-down-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Ios Arrow Round Down Icon'
+    let iconTitle = this.title ? this.title : "Ios Arrow Round Down Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

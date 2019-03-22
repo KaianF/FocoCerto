@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'logo-wordpress-icon',
+  name: "logo-wordpress-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Logo Wordpress Icon'
+    let iconTitle = this.title ? this.title : "Logo Wordpress Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+

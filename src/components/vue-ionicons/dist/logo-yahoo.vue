@@ -12,15 +12,16 @@
 import IoniconsMixin from './ionicons-mixin'
 
 export default {
-  name: 'logo-yahoo-icon',
+  name: "logo-yahoo-icon",
   mixins: [
     IoniconsMixin
   ],
   data () {
-    let iconTitle = this.title ? this.title : 'Logo Yahoo Icon'
+    let iconTitle = this.title ? this.title : "Logo Yahoo Icon"
     return {
       iconTitle: iconTitle
     }
   }
 }
 </script>
+
