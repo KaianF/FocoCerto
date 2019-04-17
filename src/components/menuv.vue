@@ -128,7 +128,6 @@
         },
         fechamenu:function(){
           $('.ui.sidebar').sidebar('hide');
-          console.log("e")
         },
         pesquisa(){
           const pl = {
@@ -139,7 +138,6 @@
         modal:function(){
           $('#como').modal('toggle')
 
-          console.log('merda')
         },
         about:function(){
           $('#about').modal('toggle')
