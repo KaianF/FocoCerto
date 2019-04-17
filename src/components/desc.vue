@@ -117,7 +117,6 @@
 			},
 			moda:function(){
 				$('.ui.accordion').accordion('refresh');
-				console.log("aa")
 			},
 			setgraf(){
 				const pl = {
@@ -131,7 +130,6 @@
 			},
 			getImgUrl(png){
 				var images = require.context('../assets/icones',false,/\.png$/)
-				console.log(png)
 				return images('./'+png)
 				$('.ui.accordion').accordion();
 			}
